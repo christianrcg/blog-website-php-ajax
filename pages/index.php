@@ -38,7 +38,7 @@ $loggedInUser = getLoggedUsername($conn);
 </head>
 
 <body>
-    <section class="hidden">
+    <section class="hidden minh2 divider grd1">
         <h1>Welcome!</h1>
         <p>This is a small website based on the web technologies: PHP, MySQl, Ajax and Bootstrap 5</p>
 
@@ -64,7 +64,14 @@ $loggedInUser = getLoggedUsername($conn);
             }
     ?>
     <!-- end of the block of code-->
+
+    <div class="wave-btm">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
     </section>
+
 
     <section class="hidden" id="postSection">
         <h2> Posts Made by the Users</h2>
@@ -119,7 +126,17 @@ $loggedInUser = getLoggedUsername($conn);
             ?>
         </div>
 
+        <svg id="visual" class="blobpos" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(497.5680766911354 149.16270089611925)">
+                <path id="blob1" d="M78.7 -94.3C103.8 -72.7 127.2 -49.6 130.8 -23.9C134.3 1.8 117.9 30.2 102.3 60.8C86.7 91.4 71.9 124.2 46.3 138.3C20.6 152.5 -15.8 148.2 -48.7 135.5C-81.7 122.8 -111 101.9 -133 72.5C-155.1 43.1 -169.9 5.3 -165.7 -31.1C-161.5 -67.4 -138.3 -102.3 -107.5 -122.8C-76.7 -143.4 -38.4 -149.7 -5.8 -142.8C26.8 -135.9 53.6 -115.8 78.7 -94.3" fill="#5213b1"></path>
+            </g>
+            <g transform="translate(467.8879178275882 142.96134632061438)" style="visibility: hidden;">
+                <path id="blob2" d="M102.9 -117.3C129.5 -100.3 144.5 -64.2 142.3 -31.7C140.2 0.8 120.8 29.7 102.5 57.1C84.2 84.5 66.9 110.4 39.9 128.2C13 146 -23.6 155.7 -49.3 143C-75.1 130.4 -89.9 95.5 -99.8 64.4C-109.6 33.3 -114.4 6.2 -117 -27.9C-119.6 -61.9 -120.1 -102.8 -100.2 -120.9C-80.3 -139.1 -40.2 -134.5 -1 -133.3C38.1 -132.1 76.3 -134.2 102.9 -117.3" fill="#5213b1"></path>
+            </g>
+        </svg>
+
     </section>
+    <div class="spacer2 wave1"></div>
 
     <!-- This section will also be hidden if there is a logged in user-->
     <?php
@@ -138,7 +155,7 @@ $loggedInUser = getLoggedUsername($conn);
     }
     ?>
     <!-- end of the login or register section-->
-    <section class="hidden">
+    <section class="hidden minh">
         <h1>Built by these Web Technologies</h1>
         <div class="logos">
             <div class="logo hidden">
@@ -160,12 +177,29 @@ $loggedInUser = getLoggedUsername($conn);
                 <img src="../images/icons/mysql.jpg">
             </div>
         </div>
-    </section>
 
-    <!-- JS Scripts  -->
+    </section>
+    <div class="divider peak1 "></div>
+    <!-- JS Scripts -->
     <script defer src="../scripts/bootstrap.bundle.min.js"></script>
     <script defer src="../scripts/popper.min.js"></script>
     <script defer src="../scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <script>
+        const blobAnimate = KUTE.fromTo(
+            '#blob1', {
+                path: '#blob1'
+            }, {
+                path: '#blob2'
+            }, {
+                repeat: 999,
+                duration: 3000,
+                yoyo: true
+            }
+        )
+        blobAnimate.start()
+    </script>
 </body>
 
 </html>

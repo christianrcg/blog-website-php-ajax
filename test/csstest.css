@@ -1,3 +1,10 @@
+:root{
+  --pastelpurple-color:#AB7BD1;
+  --lightblue-color:#84D1FD;
+  
+}
+
+
 *{
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -9,3 +16,39 @@ body{
     background-color: #131316;
     color: #ffffff;
 }
+
+ /* svg animations */
+ svg {
+    cursor: pointer;
+  }
+
+  #darkGroup {
+    fill: var(--pastelpurple-color);
+  }
+  #lightGroup{
+    fill: var(--lightblue-color);
+  }
+
+  #dark1,#light1,#dark2{
+    transition: all 1s ease;
+  }
+
+  #dark2 {
+    transform: translateX(-100%);
+  }
+
+  svg:hover #light1{
+    transform: translateX(20%);
+  }
+  svg:hover #dark1{
+    transform: translateX(40%);
+    opacity: 0;
+  }
+  svg:hover #dark2{
+    transform: translateX(10%);
+  }
+
+  .svg-container{
+    width: 180px;
+    height: 150px;
+  }
