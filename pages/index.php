@@ -52,13 +52,13 @@ $loggedInUser = getLoggedUsername($conn);
             ?>
                 <p style="margin: 3rem auto 1rem; font-size: x-large;"> Hello <b><?php echo $loggedInUser; ?>! </b></p>
                 <a href="homepage.php" class="btn btn-outline-light btn-sm mb-3"> Homepage </a>
-                <a href="../functions/logout.php" class="btn btn-outline-danger btn-sm align-self-center"> Logout </a>
+                <a href="../functions/logout.php" class="btn btn-danger btn-sm align-self-center"> Logout </a>
         </div>
     <?php
             } else {
     ?>
         <h6 style="margin-top: 3rem;" class="align-self-center"> Be one of us:</h6>
-        <a href="#loginOrRegisterSection" class="btn btn-outline-primary"> Click Here</a>
+        <a href="#loginOrRegisterSection" class="btn btn-primary btn-sm"> Click Here</a>
         </div>
     <?php
             }
