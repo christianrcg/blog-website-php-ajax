@@ -20,9 +20,9 @@ include_once('../functions/authCheck.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body id="bodyContainer">
+<body class="spacer bg3">
     <section>
-        <div class="contentbox" style="width: 80vw; padding: 2em;">
+        <div class="contentbox cnt2" style="width: 80vw; padding: 2em;">
             <div class="d-flex justify-content-between align-items-center mb-1">
                 <i class="fa-solid fa-circle-arrow-left fa-2xl b-4 back-icon"></i>
                 <span class="d-flex flex-column align-items-center mb-0">
@@ -35,10 +35,10 @@ include_once('../functions/authCheck.php');
 
             <button type="button" data-bs-toggle="modal" data-bs-target="#insertPostModal" class="btn btn-outline-success mb-2"> Add Post </button>
 
-            <div id="tblContainer">
-                <table class="table text-center table-bordered table-dark" id="userPostsTable">
+            <div id="tblContainer" style="opacity: 80%;">
+                <table class="table text-center table-bordered table-dark id=" userPostsTable">
                     <thead>
-                        <tr class="table-dark">
+                        <tr>
                             <th scope="col"> Post Details</th>
                             <th scope="col"> Date Posted</th>
                             <th scope="col"> Date Edited</th>

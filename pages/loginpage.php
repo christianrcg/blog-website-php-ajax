@@ -17,9 +17,9 @@ require_once('../functions/databaseConnection.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="spacer bg2">
     <section class="hidden">
-        <div class="contentbox">
+        <div class="contentbox cnt">
             <div class="mb-3">
                 <i class="fa-solid fa-circle-arrow-left fa-2xl mb-4 back-icon"></i>
                 <h1>Login</h1>
@@ -41,6 +41,9 @@ require_once('../functions/databaseConnection.php');
                 <button type="submit" class="btn btn-success">Login</button>
             </form>
         </div>
+
+
+
     </section>
 
     <script defer src="../scripts/bootstrap.bundle.min.js"></script>
