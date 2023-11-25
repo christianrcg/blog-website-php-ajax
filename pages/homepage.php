@@ -14,6 +14,12 @@ include_once('../functions/authCheck.php');
     <title>Homepage</title>
     <link rel="stylesheet" href="../css/customStyle.css">
 
+    <!-- For browsers -->
+    <link rel="icon" type="image/png" href="../images/webico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/webico/favicon-16x16.png" sizes="16x16">
+    <!-- For iOS -->
+    <link rel="apple-touch-icon" href="../images/webico/apple-touch-icon.png">
+
     <!-- Additional CSS-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
@@ -35,8 +41,8 @@ include_once('../functions/authCheck.php');
 
             <button type="button" data-bs-toggle="modal" data-bs-target="#insertPostModal" class="btn btn-outline-success mb-2"> Add Post </button>
 
-            <div id="tblContainer" style="opacity: 80%;">
-                <table class="table text-center table-bordered table-dark id=" userPostsTable">
+            <div id="tblContainer" style="opacity: 100%;">
+                <table class="table text-center table-bordered table-dark" id="userPostsTable">
                     <thead>
                         <tr>
                             <th scope="col"> Post Details</th>

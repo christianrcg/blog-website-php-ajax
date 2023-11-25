@@ -9,8 +9,14 @@ require_once('../functions/databaseConnection.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login </title>
-
     <link rel="stylesheet" href="../css/customStyle.css">
+
+    <!-- For browsers -->
+    <link rel="icon" type="image/png" href="../images/webico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/webico/favicon-16x16.png" sizes="16x16">
+    <!-- For iOS -->
+    <link rel="apple-touch-icon" href="../images/webico/apple-touch-icon.png">
+
     <!-- Additional CSS-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
