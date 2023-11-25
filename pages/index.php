@@ -31,9 +31,16 @@ $loggedInUser = getLoggedUsername($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACTIVITY 2</title>
+
+    <!-- For browsers -->
+    <link rel="icon" type="image/png" href="../images/webico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/webico/favicon-16x16.png" sizes="16x16">
+
+    <!-- For iOS -->
+    <link rel="apple-touch-icon" href="../images/webico/apple-touch-icon.png">
+
     <!-- CSS links-->
     <link rel="stylesheet" type="text/css" href="../css/customStyle.css">
-    <!-- Alertify -->
 
 </head>
 
@@ -194,7 +201,7 @@ $loggedInUser = getLoggedUsername($conn);
                 path: '#blob2'
             }, {
                 repeat: 999,
-                duration: 3000,
+                duration: 2000,
                 yoyo: true
             }
         )
