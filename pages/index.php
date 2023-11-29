@@ -41,13 +41,15 @@ $loggedInUser = getLoggedUsername($conn);
 
     <!-- CSS links-->
     <link rel="stylesheet" type="text/css" href="../css/customStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <section class="hidden minh2 divider grd1">
         <h1>Welcome!</h1>
-        <p>This is a small website based on the web technologies: PHP, MySQl, Ajax and Bootstrap 5</p>
+        <p>This is a small website based on the web technologies: PHP, MySQl, Ajax and Bootstrap 5 with password hashing and privacy settings of posts</p>
+        <p>Source Code at: <a href="https://github.com/christianrcg/blog-website-php-ajax" class="text-light fs-5 mx-2" target="_blank">  <i class="fa-brands fa-github fa-sm"></i> Github </a></p>
 
         <div class="hidden d-flex flex-column justify-content-center m-3">
             <h6>Posts made public of the users: </h6>
